@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 from sly import Parser
+from basic_lexer import BasicLexer
 
 class BasicParser(Parser):
 	#tokens are passed from lexer to parser
