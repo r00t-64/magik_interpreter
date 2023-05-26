@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import BasicExecute
+from . import BasicExecute, BasicLexer, BasicParser
 
 if __name__ == '__main__':
 	lexer = BasicLexer()

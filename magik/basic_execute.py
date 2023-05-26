@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 class BasicExecute:
 	
 	def __init__(self, tree, env):

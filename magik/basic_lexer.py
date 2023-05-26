@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+from sly import Lexer
+
 class BasicLexer(Lexer):
 	tokens = { NAME, NUMBER, STRING }
 	ignore = '\t '
