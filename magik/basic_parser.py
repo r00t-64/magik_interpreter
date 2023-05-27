@@ -23,12 +23,13 @@ class BasicParser(Parser):
 	def statement(self, p):
 		return p.var_assign
 
-	@_('NAME "=" expr')
+	@_('NAME "<" expr')
 	def var_assign(self, p):
 		return ('var_assign', p.NAME, p.expr)
 
-	@_('NAME "=" STRING')
+	@_('NAME "<<" STRING')
 	def var_assign(self, p):
+		print(p.NAME+"   " + p.STRING)
 		return ('var_assign', p.NAME, p.STRING)
 
 	@_('expr')
